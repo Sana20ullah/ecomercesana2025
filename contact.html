@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar with Logo</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+ 
+
+  <nav class="navbar"> 
+    <div class="logo">SM</div>
+    <i class="fas fa-bars hamburger" id="hamburger" onclick="toggleMenu()"></i>
+    <ul class="nav-links" id="navLinks">
+      <li><a  href="indexs.html">Home</a></li>
+      <li><a  href="shop.html">Shop</a></li>
+      <li><a  href="blog.html">Blog</a></li>
+      <li><a  href="about.html">About</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+      <li class="cart">
+        <a href="shoppingcard.html"><i class="fas fa-shopping-cart"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <section class="cover-hero">
+    <div class="hero-content">
+      <h2>Lets-talk </h2>
+      <h3> Leave a massage . We love hear from you </h3>
+    </div>
+  </section>
+
+
+
+  <section class="get-in-touch">
+    <div class="contact-left">
+      <h5>Get in Touch</h5>
+      <h1>Visit one of our agency locations or contact us today.</h1>
+      <h5>Head Office</h5>
+  
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Glassford Street, Glasgow in New York</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>contact@email.com</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span>0923273207</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-clock"></i>
+        <span>Mon to Sun: 6.00am - 6.00pm</span>
+      </div>
+    </div>
+  
+    <div class="contact-right">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.0613569577!2d-74.0850815!3d40.6452447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316a335b89%3A0x86adfe29a41f7829!2sNew%20York!5e0!3m2!1sen!2sus!4v1683318572830!5m2!1sen!2sus" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+  
+ 
+  <section class="contact-form-section">
+    <div class="contact-left">
+      <h2>We Love to Hear from You</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  
+    <div class="contact-right">
+      <div class="team-member">
+        <img src="img/people/1.png" alt="John Doe">
+        <div>
+          <h4>John Doe</h4>
+          <p>Senior Marketing Manager</p>
+          <p>📞 2057207502</p>
+          <p>✉️ contact@email.com</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="img/people/2.png" alt="Jane Smith">
+        <div>
+          <h4>Jane Smith</h4>
+          <p>Sales Executive</p>
+          <p>📞 3058308820</p>
+          <p>✉️ jane@email.com</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="img/people/3.png" alt="Mark Taylor">
+        <div>
+          <h4>Mark Taylor</h4>
+          <p>Support Specialist</p>
+          <p>📞 4079053209</p>
+          <p>✉️ mark@email.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section class="newsletter-section">
+    <div class="newsletter-container">
+      <!-- Left Text -->
+      <div class="newsletter-text">
+        <h2>Sign Up for Newsletter</h2>
+        <p>
+          Get E-mail update our latest news and 
+          <span class="highlight">(special offers)</span>
+        </p>
+      </div>
+  
+      <!-- Right Form -->
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </section>
+  
+  
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1: Contact Info -->
+      <div class="footer-col">
+        <h2 class="logo">SM</h2>
+        <h4>Contact</h4>
+        <p>Address: 54646 Frande Street, Stean</p>
+        <p>Phone: 90875927594</p>
+        <p>Hours: 0:00 - 16:00, Mon - Sat</p>
+        <div class="spacer"></div>
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+  
+      <!-- Column 2: About -->
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Delivery Information</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Condition</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+  
+      <!-- Column 3: My Account -->
+      <div class="footer-col">
+        <h4>My Account</h4>
+        <ul>
+          <li>Sign In</li>
+          <li>View Cart</li>
+          <li>My Wishlist</li>
+          <li>Track My Order</li>
+          <li>Help</li>
+        </ul>
+      </div>
+  
+      <!-- Column 4: Install App & Payments -->
+      <div class="footer-col">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="app-buttons">
+          <img src="img/pay/app.jpg" alt="App Store">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+        </div>
+        <p>Secure Payment Gateway</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/000000/visa.png"/>
+          <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png"/>
+          <img src="https://img.icons8.com/color/48/000000/paypal.png"/>
+          <img src="https://img.icons8.com/color/48/000000/discover.png"/>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 | HTML, CSS eCommerce Template</p>
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+
+<script>
+    const mainImage = document.querySelector('.main-image img');
+    const thumbnails = document.querySelectorAll('.image-row img');
+  
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        mainImage.src = thumbnail.src;
+      });
+    });
+  </script>
+
+  <script src="main.js"></script>
+
+</body>
+</html>

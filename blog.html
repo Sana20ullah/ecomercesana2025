@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar with Logo</title>
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+ 
+
+  <nav class="navbar"> 
+    <div class="logo">SM</div>
+    <i class="fas fa-bars hamburger" id="hamburger" onclick="toggleMenu()"></i>
+    <ul class="nav-links" id="navLinks">
+      <li><a  href="indexs.html">Home</a></li>
+      <li><a  href="shop.html">Shop</a></li>
+      <li><a class="active" href="#">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="cart">
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <section class="cover-hero">
+    <div class="hero-content">
+      <h2>Read more </h2>
+      <h3>Creative Fashion Designer</h3>
+    </div>
+  </section>
+
+  <section class="blog-section">
+    <h2 class="section-title">Blog Posts</h2>
+  
+    <div class="blog-post">
+      <img src="img/blog/b1.jpg" alt="Blog Image 1">
+      <div class="blog-content">
+        <h3>The Cotton-Jersey Zip-Up Hoodie</h3>
+        <p>This cotton-jersey hoodie is made with premium fabric designed to offer both comfort and warmth. Ideal for layering during transitional weather and crafted with a modern cut for everyday wear.</p>
+        <strong><a href="#">Continue reading...</a></strong>
+      </div>
+    </div>
+  
+    <div class="blog-post">
+      <img src="img/blog/b2.jpg" alt="Blog Image 2">
+      <div class="blog-content">
+        <h3>Summer Essentials for Men</h3>
+        <p>Discover the ultimate wardrobe refresh with our summer collection – breathable, durable, and trend-focused designs made to elevate your everyday style this season.</p>
+        <strong><a href="#">Continue reading...</a></strong>
+      </div>
+    </div>
+  
+    <div class="blog-post">
+      <img src="img/blog/b3.jpg" alt="Blog Image 3">
+      <div class="blog-content">
+        <h3>Why Quality Basics Matter</h3>
+        <p>Basics are the foundation of any wardrobe. Learn why investing in high-quality basics like tees and hoodies ensures both longevity and timeless style in your outfits.</p>
+        <strong><a href="#">Continue reading...</a></strong>
+      </div>
+    </div>
+  
+    <div class="blog-post">
+      <img src="img/blog/b4.jpg" alt="Blog Image 4">
+      <div class="blog-content">
+        <h3>Layering for Fall Weather</h3>
+        <p>Master the art of layering with our guide to fall fashion essentials – from lightweight knits to stylish outerwear that balances warmth and movement.</p>
+        <strong><a href="#">Continue reading...</a></strong>
+      </div>
+    </div>
+  
+    <div class="blog-post">
+      <img src="img/blog/b5.jpg" alt="Blog Image 5">
+      <div class="blog-content">
+        <h3>Behind the Design: T-Shirt Trends</h3>
+        <p>Explore the inspiration behind our latest t-shirt drops and how current trends in graphic design and sustainability are shaping fashion choices.</p>
+        <strong><a href="#">Continue reading...</a></strong>
+      </div>
+    </div>
+  </section>
+  
+
+  <div class="pagination">
+    <a href="#" class="page-number active">1</a>
+    <a href="#" class="page-number">2</a>
+    <a href="#" class="page-number">3</a>
+    <a href="#" class="next-page">→</a>
+  </div>
+
+  
+
+  
+  <section class="newsletter-section">
+    <div class="newsletter-container">
+      <!-- Left Text -->
+      <div class="newsletter-text">
+        <h2>Sign Up for Newsletter</h2>
+        <p>
+          Get E-mail update our latest news and 
+          <span class="highlight">(special offers)</span>
+        </p>
+      </div>
+  
+      <!-- Right Form -->
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </section>
+  
+  
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1: Contact Info -->
+      <div class="footer-col">
+        <h2 class="logo">SM</h2>
+        <h4>Contact</h4>
+        <p>Address: 54646 Frande Street, Stean</p>
+        <p>Phone: 90875927594</p>
+        <p>Hours: 0:00 - 16:00, Mon - Sat</p>
+        <div class="spacer"></div>
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+  
+      <!-- Column 2: About -->
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Delivery Information</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Condition</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+  
+      <!-- Column 3: My Account -->
+      <div class="footer-col">
+        <h4>My Account</h4>
+        <ul>
+          <li>Sign In</li>
+          <li>View Cart</li>
+          <li>My Wishlist</li>
+          <li>Track My Order</li>
+          <li>Help</li>
+        </ul>
+      </div>
+  
+      <!-- Column 4: Install App & Payments -->
+      <div class="footer-col">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="app-buttons">
+          <img src="img/pay/app.jpg" alt="App Store">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+        </div>
+        <p>Secure Payment Gateway</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/000000/visa.png"/>
+          <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png"/>
+          <img src="https://img.icons8.com/color/48/000000/paypal.png"/>
+          <img src="https://img.icons8.com/color/48/000000/discover.png"/>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 | HTML, CSS eCommerce Template</p>
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+
+<script>
+    const mainImage = document.querySelector('.main-image img');
+    const thumbnails = document.querySelectorAll('.image-row img');
+  
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        mainImage.src = thumbnail.src;
+      });
+    });
+  </script>
+
+  <script src="main.js"></script>
+
+</body>
+</html>

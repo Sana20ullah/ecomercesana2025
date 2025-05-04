@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar with Logo</title>
+  <link rel="stylesheet" href="shoppingcard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+ 
+
+  <nav class="navbar"> 
+    <div class="logo">SM</div>
+    <i class="fas fa-bars hamburger" id="hamburger" onclick="toggleMenu()"></i>
+    <ul class="nav-links" id="navLinks">
+      <li><a  href="indexs.html">Home</a></li>
+      <li><a  href="shop.html">Shop</a></li>
+      <li><a  href="blog.html">Blog</a></li>
+      <li><a  href="about.html">About</a></li>
+      <li><a  href="contact.html">Contact</a></li>
+      <li class="cart">
+        <a class="active" href="shoppingcard.html"><i class="fas fa-shopping-cart"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <section class="cover-hero">
+    <div class="hero-content">
+      <h1>cart </h1>
+      <h3> Leave a massage . We love hear from you </h3>
+    </div>
+  </section>
+
+  <section class="order-section">
+    <div class="order-container">
+      <div class="order-header">
+        <span>Remove</span>
+        <span>Image</span>
+        <span>Product</span>
+        <span>Price</span>
+        <span>Quantity</span>
+        <span>Subtotal</span>
+      </div>
+  
+      <div class="order-row">
+        <span class="remove-icon"><i class="fas fa-trash-alt"></i></span>
+        <span><img src="img/products/f1.jpg" alt="Product"></span>
+        <span class="product-name">T-Shirt</span>
+        <span class="price"><i class="fas fa-dollar-sign"></i>23.00</span>
+        <span><input type="number" value="1" min="1"></span>
+        <span class="subtotal">$23.00</span>
+      </div>
+  
+      <div class="order-row">
+        <span class="remove-icon"><i class="fas fa-trash-alt"></i></span>
+        <span><img src="img/products/f2.jpg" alt="Product"></span>
+        <span class="product-name">Casual Shirt</span>
+        <span class="price"><i class="fas fa-dollar-sign"></i>30.00</span>
+        <span><input type="number" value="1" min="1"></span>
+        <span class="subtotal">$30.00</span>
+      </div>
+      <div class="order-row">
+        <span class="remove-icon"><i class="fas fa-trash-alt"></i></span>
+        <span><img src="img/products/f7.jpg" alt="Product"></span>
+        <span class="product-name">Casual Shirt</span>
+        <span class="price"><i class="fas fa-dollar-sign"></i>30.00</span>
+        <span><input type="number" value="1" min="1"></span>
+        <span class="subtotal">$30.00</span>
+      </div>
+      <div class="order-row">
+        <span class="remove-icon"><i class="fas fa-trash-alt"></i></span>
+        <span><img src="img/products/f6.jpg" alt="Product"></span>
+        <span class="product-name">Casual Shirt</span>
+        <span class="price"><i class="fas fa-dollar-sign"></i>30.00</span>
+        <span><input type="number" value="1" min="1"></span>
+        <span class="subtotal">$30.00</span>
+      </div>
+  
+      <!-- Add more rows here as needed -->
+    </div>
+  </section>
+  
+
+  <section class="coupon-checkout">
+    <div class="coupon-container">
+  
+      <!-- Left Side: Apply Coupon -->
+      <div class="coupon-left">
+        <h3>Apply Coupon</h3>
+        <div class="apply-row">
+          <input type="text" placeholder="Enter your coupon">
+          <button>Apply</button>
+        </div>
+      </div>
+  
+      <!-- Right Side: Cart Totals -->
+      <div class="coupon-right">
+        <div class="cart-summary">
+          <h3>Cart Totals</h3>
+          <table>
+            <tr>
+              <td>Cart Subtotal</td>
+              <td><i class="fas fa-dollar-sign"></i> 83.00</td>
+            </tr>
+            <tr>
+              <td>Shipping</td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong><i class="fas fa-dollar-sign"></i> 84.00</strong></td>
+            </tr>
+          </table>
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1: Contact Info -->
+      <div class="footer-col">
+        <h2 class="logo">SM</h2>
+        <h4>Contact</h4>
+        <p>Address: 54646 Frande Street, Stean</p>
+        <p>Phone: 90875927594</p>
+        <p>Hours: 0:00 - 16:00, Mon - Sat</p>
+        <div class="spacer"></div>
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+  
+      <!-- Column 2: About -->
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Delivery Information</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Condition</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+  
+      <!-- Column 3: My Account -->
+      <div class="footer-col">
+        <h4>My Account</h4>
+        <ul>
+          <li>Sign In</li>
+          <li>View Cart</li>
+          <li>My Wishlist</li>
+          <li>Track My Order</li>
+          <li>Help</li>
+        </ul>
+      </div>
+  
+      <!-- Column 4: Install App & Payments -->
+      <div class="footer-col">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="app-buttons">
+          <img src="img/pay/app.jpg" alt="App Store">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+        </div>
+        <p>Secure Payment Gateway</p>
+        <div class="payment-icons">
+          <img src="https://img.icons8.com/color/48/000000/visa.png"/>
+          <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png"/>
+          <img src="https://img.icons8.com/color/48/000000/paypal.png"/>
+          <img src="https://img.icons8.com/color/48/000000/discover.png"/>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 | HTML, CSS eCommerce Template</p>
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+
+<script>
+    const mainImage = document.querySelector('.main-image img');
+    const thumbnails = document.querySelectorAll('.image-row img');
+  
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        mainImage.src = thumbnail.src;
+      });
+    });
+  </script>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
